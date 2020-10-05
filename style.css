@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&family=Piazzolla&display=swap');
+*{
+    box-sizing:border-box;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    background:#e0ece4;
+}
+header{
+    font-size:2rem;
+    font-family: 'Piazzolla', serif;
+}
+hr{
+    width: 25%;
+    margin:auto;
+    border:0;
+    height:1.2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.music-container{
+    margin-top: 4%;
+    height:450px;
+    width:350px;
+    background: #e7e7e7;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+.image-container{
+    height:250px;
+    width:250px;
+    position:relative;
+    top:-30px;
+    left:50px;
+}
+.image-container img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
+h2{
+    font-size:25px;
+    margin:0;
+    font-family: 'Nunito', sans-serif;
+}
+h3{
+    font-size:20px;
+    margin: 5px 0 0;
+    font-family: 'Noto Serif', serif;
+}
+.progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 20px;
+    height: 4px;
+    width: 90%;
+  } 
+.progress {
+    background: #242323;
+    border-radius: 5px;
+    height: 100%;
+    width: 20%;
+    transition: width 0.1s linear;
+  }
+.duration-wrapper {
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+.controls{
+    position:relative;
+    top:-15px;
+    left:25%;
+    width:60%;
+}
+.fas {
+    font-size: 30px;
+    color: rgb(83, 81, 81);
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+.fas:hover {
+    filter: brightness(80%);
+  }
+  
+.main-button {
+    font-size: 40px;
+    position: relative;
+    top: 3px;
+  }
+@media screen and (max-width:400px){
+    .music-container{
+        margin-top:70px;
+    }.image-container{
+        left:50px;
+    }
+    h2{
+font-size:20px;
+    }
+    h3{
+font-size:15px;
+    }
+}
