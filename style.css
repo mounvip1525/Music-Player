@@ -9,7 +9,7 @@ body{
     align-items:center;
     text-align:center;
     flex-direction:column;
-    background: #c9ced3;
+    background: #929ca7;
 }
 header{
     font-size:2rem;
@@ -41,7 +41,7 @@ hr{
     height:100%;
     width:100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
 }
 h2{
@@ -54,7 +54,7 @@ h3{
     font-size:20px;
     margin: 5px 0 0;
     font-family: 'David Libre', serif;
-    color:rgb(77, 77, 77);
+    color:rgb(99, 99, 99);
 }
 .progress-container {
     background: #fff;

@@ -15,24 +15,24 @@ let index = 0;
 
 const songs = [
   {
-    name: 'jacinto-1',
+    name: 'music-1',
     displayName: 'Electric Chill Machine',
     artist: 'Jacinto Design',
   },
   {
-    name: 'jacinto-2',
+    name: 'music-2',
     displayName: 'Seven Nation Army (Remix)',
     artist: 'Jacinto Design',
   },
   {
-    name: 'jacinto-3',
+    name: 'music-3',
     displayName: 'Goodnight, Disco Queen',
     artist: 'Jacinto Design',
   },
   {
     name: 'metric-1',
     displayName: 'Front Row (Remix)',
-    artist: 'Metric/Jacinto Design',
+    artist: 'Metric/music Design',
   },
 ];
 
@@ -79,6 +79,7 @@ function nextSong() {
 function updateProgressWidth(event) {
   if (isPlaying) {
     const { duration, currentTime } = event.srcElement;
+    console.log(duration,currentTime);
     //To display the black progress line 
     let progressWidth = (currentTime / duration )* 100;
     progress.style.width = `${progressWidth}%`;
@@ -110,8 +111,8 @@ function setProgress(event){
 const width=this.clientWidth;
 //to find the distance from beginning of the parent elemet that caused the event to the mouse click distance
 const clickX=event.offsetX;
-console.log('clickx',clickX);
-console.log("percent of song completed",clickX/width*duration);
+// console.log('clickx',clickX);
+// console.log("percent of song completed",clickX/width*duration);
 audio.currentTime=( clickX / width) *duration;
 }
 
